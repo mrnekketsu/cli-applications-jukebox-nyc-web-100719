@@ -1,4 +1,6 @@
 # Add your code here
+include pry
+
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -22,7 +24,9 @@ end
 def play(songs)
   puts "Please enter a song name or number: "
   user_input = gets.strip
-  songs.each_with_index
+  songs.each_with_index { |value, index|
+    binding.pry
+  }
 end
 
 def list(songs)
