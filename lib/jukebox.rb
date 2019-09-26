@@ -24,7 +24,7 @@ def play
 end
 
 def list(songs)
-  songs.each_index()
+  songs.each_index{|x|}
   
 end
 
